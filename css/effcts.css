@@ -1,0 +1,67 @@
+.navbar ul a li {
+    display: inline-block;
+    position: relative;
+    color: #667983;
+    
+  }
+  
+  .navbar ul a li::after {
+    content: '';
+    position: absolute;
+    width: 105%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2;
+    left: 0;
+    background-color: var(--theme-color);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .navbar ul a li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.navbar ul a li:hover{
+    color: var(--theme-hover-color);
+  }
+
+.active{
+  color: #0389f7!important;
+}
+
+
+/* button related css effects */
+.btn {
+  border: 2px solid var(--theme-color);
+  background-color: var(--theme-color);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 1rem 1.6rem;
+  transition: .5s;
+}
+
+
+
+
+/* CSS */
+
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  box-shadow: rgba(7, 12, 14, 0.247) 0 8px 15px;
+  transform: translateY(-2px);
+  cursor: pointer;
+  background-color: #0066ebec;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/* #done with a btn styling */

@@ -1,0 +1,74 @@
+@media (min-width:1279px) {
+    
+}
+@media (max-width:992px) {
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: white;
+        -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        padding: 0.5rem 2rem;
+    }
+    .intro-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .introduction .intro-text{
+        max-width: 100%;
+        margin-bottom: 4rem;
+    
+    }
+    .introduction .intro-image{
+        width: 100%;
+        text-align: center;
+        margin:auto;
+    }
+    
+
+    
+}
+@media (max-width: 768px) {
+    .d-menu{
+        display: none;
+    }
+    .m-menu{
+        display: block;
+        font-size: 5rem;
+        
+    }
+    .sub-image-math{
+        display: none;
+    }
+    .sub-image-chemistry{
+        display: none;
+    }
+    .demo{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3, 0.5fr) 3fr repeat(3, 0.5fr);
+        grid-template-areas: "item1" "item2" "item3" "image" "item4" "item5" "item6"; 
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .demo p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    footer .link{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding-bottom: 2rem;
+    }
+    footer .link div{
+        margin-bottom: 3rem;
+    }
+}

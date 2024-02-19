@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+:root{
+    --theme-text:#2d4748;
+    --theme-text-dull: #5c6069; 
+    --theme-text-long: #718096;
+    --theme-color: #0066EB;
+    --theme-hover-color: #0062B3;
+    --theme-section-bg: #F6F7FC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color:#2d3748;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgba(19, 40, 48, 0.671);
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(219, 219, 219);
+}
